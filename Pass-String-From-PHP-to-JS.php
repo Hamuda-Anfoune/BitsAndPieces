@@ -17,5 +17,6 @@
 			alert(smart);
 		});
 	</script>
+	<!-- testing git -->
 </body>
 </html>
