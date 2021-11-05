@@ -1,4 +1,4 @@
-function convertUkDateToUnix(ukDate) {
+function convertUkDateToFullUsDate(ukDate) {
     var splitDate = ukDate.split('/');
     var month = splitDate[1] - 1; //Javascript months are 0-11
 
