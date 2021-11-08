@@ -22,8 +22,10 @@ function snedAjaxRequest() {
         dataType: 'json',
         // END: Method #2
 
-        beforeSend: function(){
-            //
+        beforeSend: function (xhr, opts) {
+            if (true) {
+                xhr.abort(); // Abort the ajax request
+            }
         },
         success: function (returnObj) {
             console.log(returnObj);
