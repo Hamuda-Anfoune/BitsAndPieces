@@ -67,19 +67,15 @@
 
 <script>
     $('#table-id').DataTable({
-        // "scrollX": '100%',
-        // "scrollCollapse": true,
         // "scroller": true,
-        // fixedColumns: {
-        // leftColumns: 1
-        // },
-
         // scrollY: "300px",
         "scrollX": true,
         "scrollCollapse": true,
+        // "fixedColumns": true, // Works fine, fixes the first column to the left
         "fixedColumns": {
             left: 1,
             right: 0,
+            // leftColumns: 1
         },
     });
 </script>
