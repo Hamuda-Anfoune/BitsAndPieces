@@ -5,10 +5,11 @@
  */
 
 $this->spreadsheet = new PHPExcel();
+
 // Setting a cell value
 $this->spreadsheet
-->setActiveSheetIndex(0)
-->setCellValue('A1', 'Export for repair');
+    ->setActiveSheetIndex(0)
+    ->setCellValue('A1', 'Export for repair');
 
 $sheet = $this->spreadsheet->getActiveSheet();
 $last_row_number = 10; // For example
@@ -38,7 +39,7 @@ $sheet->getRowDimension(1)->setRowHeight(29);
 
 // Set custom width
 foreach (range("A", "R") as $letter) {
-$sheet->getColumnDimension($letter)->setWidth(15);
+    $sheet->getColumnDimension($letter)->setWidth(15);
 }
 
 // enable wrapping text
